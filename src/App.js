@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import "./App.css";
+import Navbar from "./components/navbar/Navbar";
+
+import LandingImage from "./assets/food.webp";
+import FrontCard from "./components/FrontCard";
+import MainOrderCard from "./components/order-card/MainOrderCard";
+import Context from "./components/store/Context";
+import Modal from "./components/Modal/Modal";
 
 function App() {
+  const ctx = useContext(Context);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <img src={LandingImage} alt="Portuguese food" className="landingImg " />
+      <FrontCard />
+      <MainOrderCard />
+      {ctx.showModal && <Modal />}
     </div>
   );
 }
