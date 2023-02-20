@@ -1,0 +1,19 @@
+.itemNumber {
+  animation: accentuate 0.5s ease-in;
+}
+
+@keyframes accentuate {
+  0% {
+    scale: 1.2;
+  }
+  20% {
+    scale: 1.3;
+  }
+  50% {
+    scale: 1.6;
+  }
+
+  100% {
+    scale: 1;
+  }
+}

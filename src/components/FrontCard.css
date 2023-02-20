@@ -1,0 +1,28 @@
+.position {
+  margin: auto;
+  max-height: 350px;
+  max-width: 600px;
+  /* z-index: 2; */
+  position: relative;
+  /* top: -30px; */
+  margin-top: -30px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(32, 32, 32);
+  padding: 10px;
+  background: #444141;
+
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

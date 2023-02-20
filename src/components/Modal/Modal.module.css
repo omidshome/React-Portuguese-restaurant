@@ -1,0 +1,41 @@
+.mBotton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputBtn {
+  max-width: 70px;
+}
+
+.orderedItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalBg {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(122, 117, 117, 0.5);
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.modalCart {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: 400px;
+  height: 250px;
+  background: white;
+  color: black;
+
+  cursor: auto;
+  border-radius: 10px;
+}
